@@ -23,6 +23,7 @@ public class GAME_MANAGER : MonoBehaviour
     public void GameOver()
     {
         Time.timeScale = 0f;
+        AudioManager.instance.Play("GameOver");
         _losePanel.SetActive(true);
     }
 
